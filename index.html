@@ -34,23 +34,23 @@
           incorrect email or password
         </div>
         <div id="inputs-not-completed" class="d-none pb-3">
-          All inputs is required
+          All inputs are required
         </div>
         <button class="d-block w-100 my-4 rounded-2 py-2">Login</button>
         <p>Don’t have an account? <a href="signUp.html">Sign Up</a></p>
         <div class="g-signin2" data-onsuccess="onSignIn"></div>
-        <div class="data">
-          <p>name</p>
-          <p id="name"></p>
-          <p>email</p>
-          <p id="email"></p>
-        </div>
       </form>
+      <div class="data" style="display: none">
+        <p>name</p>
+        <p id="name"></p>
+        <p>email</p>
+        <p id="email"></p>
+      </div>
+      <a href="#" class="btn btn-primary" onclick="signOut();">Sign out</a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.all.min.js"></script>
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
   </body>
