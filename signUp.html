@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.min.css"
+    />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="" class="text-center my-5 p-5 w-75 mx-auto">
+        <h1>Smart Login System</h1>
+        <input
+          class="d-block w-100 my-3 rounded-2 p-2 px-3 pe-5 form-control"
+          type="text"
+          placeholder="Enter your name"
+        />
+        <input
+          class="d-block w-100 my-3 rounded-2 p-2 px-3 pe-5 form-control"
+          type="email"
+          placeholder="Enter your email"
+        />
+        <input
+          class="d-block w-100 my-3 rounded-2 p-2 px-3 pe-5 form-control"
+          type="password"
+          placeholder="Enter your password"
+        />
+        <div id="inputs-not-completed" class="d-none pb-3">
+          All inputs is required
+        </div>
+        <button class="d-block w-100 my-4 rounded-2 py-2">Sign Up</button>
+        <p>Don’t have an account? <a href="index.html">Signin</a></p>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.all.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

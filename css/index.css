@@ -1,0 +1,100 @@
+:root {
+  --blue: #17a2b8;
+  --bg-color: #24353f;
+  --shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+  --gray: #b8bec4;
+  --ph: #9ea3a7;
+}
+
+body {
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+form {
+  box-shadow: var(--shadow);
+  background-color: var(--bg-color);
+}
+
+form h1 {
+  color: var(--blue);
+  font-weight: 400;
+}
+
+form input.form-control {
+  background-color: transparent;
+  border: 1px solid var(--gray);
+  --bs-body-color: #fff;
+  --bs-body-bg: transparent;
+}
+form input.form-control:focus {
+  outline: none;
+  border: 1px solid rgb(0, 170, 255);
+  box-shadow: none;
+  caret-color: #fff;
+}
+form input.form-control::placeholder {
+  color: var(--ph);
+}
+
+button {
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: var(--blue);
+  color: #fff;
+}
+form p {
+  color: #fff;
+}
+
+.container div {
+  color: red;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h1 {
+  color: var(--blue);
+  box-shadow: var(--shadow);
+}
+header {
+  box-shadow: var(--shadow);
+}
+header h5 {
+  color: #fff;
+  cursor: pointer;
+}
+
+header a {
+  color: rgb(179, 179, 179);
+  border: 1px solid rgb(228, 178, 0);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+header a:hover {
+  background-color: rgb(228, 178, 0);
+  color: #fff;
+  text-decoration: none;
+}
