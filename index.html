@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-signin-client_id"
+      content="844735604958-sdug1ohpcobc3keqdtapplrvedp1ou1v.apps.googleusercontent.com"
+    />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.min.css"
@@ -15,7 +19,7 @@
   <body>
     <div class="container">
       <form action="" class="text-center my-5 p-5 w-75 mx-auto">
-        <h1>Smart Login Sysm</h1>
+        <h1>Smart Login System</h1>
         <input
           class="d-block w-100 my-3 rounded-2 p-2 px-3 pe-5 form-control"
           type="email"
@@ -34,9 +38,21 @@
         </div>
         <button class="d-block w-100 my-4 rounded-2 py-2">Login</button>
         <p>Don’t have an account? <a href="signUp.html">Sign Up</a></p>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div class="data">
+          <p>name</p>
+          <p id="name"></p>
+          <p>email</p>
+          <p id="email"></p>
+        </div>
+        <a href="#" onclick="signOut();">Sign out</a>
       </form>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.1/dist/sweetalert2.all.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
   </body>
+</html>
